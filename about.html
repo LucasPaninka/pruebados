@@ -21,7 +21,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Destinos
@@ -33,7 +33,7 @@
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="page.html">Viajes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">Contacto</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="about.html">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -72,6 +72,27 @@
         </table>
 
 
+        <h2 style="text-align: center;padding-top: 20px;">Adivinanza</h2>
+        <h3 style="text-align: center;">Respondé la siguiente pregunta para tener un descuento en la proxima compra</h3>
+        <p>Ando rastreando un camino, cuando el camino ha acabado, dígame usted vecino. ¿A qué país he llegado?</p>
+        
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+            <form>
+                <label for="nombre">Respuesta:</label>
+                <input id="txtNombre" type="text" name="nombre"/>
+                <button onclick="mostrarNombre()">Enviar</button>
+            </form>
+            <p id="intentos"><b>Intentos restantes:</b> 4</p>
+            <p id="pista"></p>
+            <p id="pista2"></p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div id="laAlerta"></div>
+            </div>
+        </div>
+
+
     </section>
 
 
@@ -80,6 +101,8 @@
     </footer>
 
     </div>
+
+    <script src="script.js"></script>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
